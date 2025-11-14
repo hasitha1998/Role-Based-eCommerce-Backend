@@ -1,4 +1,24 @@
 {
+  
+  "name": "ecommerce-admin-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:migrate": "node src/scripts/migrate.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "admin",
+    "adminjs",
+    "express",
+    "postgresql",
+    "sequelize"
+  ],
+  "author": "Hasitha Sanjaya",
+  "license": "MIT",
+  
   "dependencies": {
     "@adminjs/express": "^6.1.1",
     "@adminjs/sequelize": "^4.1.1",
