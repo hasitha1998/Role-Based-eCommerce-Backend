@@ -8,6 +8,7 @@ import apiRoutes from './routes/api.js';
 import userRoutes from './routes/users.js';
 import productRoutes from './routes/products.js';
 import orderRoutes from './routes/orders.js';
+import categoryRoutes from './routes/categories.js';
 import { buildAdminRouter } from './config/adminjs.js';
 
 dotenv.config();
@@ -30,6 +31,7 @@ app.use('/api', apiRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/categories', categoryRoutes);
 
 // AdminJS
 buildAdminRouter(app);
